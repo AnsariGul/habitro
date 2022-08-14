@@ -51,6 +51,7 @@ $(document).ready(function () {
     setTimeout(function () {
         $(".contact-img").addClass("contact_in_view");
     }, 1000);
+    
 // $(".load-animation.text_animate").addClass("in_view");
 
 let imgItems = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19'];
@@ -146,6 +147,9 @@ let imgItems = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15
     $('.nav-icon').click(function () {
         $(this).toggleClass('open');
         $(".overlay-menu").toggleClass('open-menu');
+        setTimeout(function () {
+            $(".menu-img").addClass("in-veiw");
+        }, 100);
     });
 
     jQuery(function ($) {
