@@ -1,4 +1,7 @@
-window.scrollTo({ top: 0, behavior: 'smooth' });
+// window.scrollTo({ top: 0, behavior: 'smooth' });
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 $(window).scroll(function () {
     // sticky Header
     var scroll = $(window).scrollTop();
