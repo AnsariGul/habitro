@@ -31,6 +31,7 @@ body {
     color: #383838;
     background: #fff url(../images/top-bg.jpg) top;
     letter-spacing: 0.6px;
+    background-attachment: fixed;
 }
 
 html {
@@ -439,6 +440,7 @@ header .navbar-light .navbar-nav .nav-link,
     opacity: 0.4;
     padding: 55px 20px !important;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 header .navbar-light .navbar-nav .active>.nav-link,
@@ -804,7 +806,7 @@ header.sticky .navbar-light .navbar-nav .nav-link,
     bottom: -100%;
     left: 0;
     right: 0;
-    padding: 100px 40px 40px 40px;
+    padding: 100px 30% 40px 40px;
     background: transparent linear-gradient(180deg, #3D3D3D00 0%, #3D3D3D 100%) 0% 0% no-repeat padding-box;
     transition: 0.5s;
 }
@@ -818,6 +820,14 @@ header.sticky .navbar-light .navbar-nav .nav-link,
     color: #fff;
     text-transform: uppercase;
     margin-top: 15px;
+    position: relative;
+}
+.project-item .img .caption p a img{
+    width: 30px;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .project-item:hover .caption {
@@ -1013,7 +1023,7 @@ header.sticky .navbar-light .navbar-nav .nav-link,
 
 /* about-us */
 .about-us {
-    padding: 150px 0 200px 0;
+    padding: 160px 0 200px 0;
     position: relative;
 }
 
@@ -1524,7 +1534,7 @@ footer .footer-logo h3 span {
 
 /* Blog Page */
 .blog {
-    margin:50px 0 100px 0;
+    margin:80px 0 100px 0;
 }
 .blog-page .blog {
     margin:0 0 100px 0;
@@ -1978,6 +1988,24 @@ footer .footer-logo h3 span {
     a {
         font-size: 20px;
     }
+    .second-title a{
+        font-size: 100px;
+        margin-top: 50px;
+    }
+    .second-title h3 a span.next-btn {
+        width: 90px;
+        height: 90px;
+        right: -20px;
+    }
+    .second-title h3 a span.next-btn:before{
+        background-size: 40px;
+    }
+    .before-after .title h2{
+        font-size: 160px;
+    }
+    .about-us .title h2{
+        font-size: 170px;
+    }
     .brand_logo_padding{
         padding: 280px 0;
     }
@@ -1990,6 +2018,9 @@ footer .footer-logo h3 span {
     .overlay-menu ul li a{
         font-size: 100px;
         line-height: 110px;
+    }
+    .about-section {
+        padding: 160px 0;
     }
     .about-section .about-copy p,
     .about-section .about-copy p a{
@@ -2010,6 +2041,71 @@ footer .footer-logo h3 span {
     .project-slider .owl-prev,
     .project-slider .owl-next{
         top: 73%;
+    }
+    .before-after-div #comparison{
+        width: 1700px;
+        height: 1133px;
+    }
+    .about-us {
+        padding: 220px 0 240px 0;
+    }
+    .surround-yourself-with-love h2{
+        font-size: 135px;
+        top: 32%;
+    }
+    .surround-yourself-with-love .images-section{
+        top: 20%;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(1) img,
+    .surround-yourself-with-love .images-section .images-item:nth-child(2) img,
+    .surround-yourself-with-love .images-section .images-item:nth-child(3) img,
+    .surround-yourself-with-love .images-section .images-item:nth-child(4) img,
+    .surround-yourself-with-love .images-section .images-item:nth-child(5) img,
+    .surround-yourself-with-love .images-section .images-item:nth-child(6) img,
+    .surround-yourself-with-love .images-section .images-item:nth-child(7) img,
+    .surround-yourself-with-love .images-section .images-item:nth-child(8) img {
+        width: 100%;
+    }
+
+    .surround-yourself-with-love .images-section .images-item:nth-child(1){
+        width: 800px;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(2){
+        width: 400px;
+        right: 32%;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(3){
+        width: 700px;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(4){
+        width: 200px;
+        top: 50%;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(5){
+        width: 600px;
+        top: 40%;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(6){
+        width: 1200px;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(7){
+        width: 500px;
+    }
+    .surround-yourself-with-love .images-section .images-item:nth-child(8){
+        width: 500px;
+    }
+    .blog .blog-title h1,
+    .blog .blog-title h2{
+        font-size: 510px;
+    }
+    .blog .blog-item h6{
+        font-size: 26px;
+    }
+    .blog .blog-item h3{
+        font-size: 44px;
+    }
+    .blog .small .blog-item .copy-div h3{
+        font-size: 40px;
     }
 }
 @media only screen and (min-device-width: 1600px) and (max-device-width: 1920px) {
@@ -2092,6 +2188,9 @@ footer .footer-logo h3 span {
         height: auto;
     }
 
+    .about-section {
+        padding: 140px 0;
+    }
     .about-section .about-copy a,
     .about-section .about-copy p a {
         font-size: 16px;
@@ -2155,7 +2254,7 @@ footer .footer-logo h3 span {
     }
 
     .about-us {
-        padding: 220px 0 270px 0;
+        padding: 250px 0 270px 0;
     }
 
 
@@ -2324,7 +2423,7 @@ footer .footer-logo h3 span {
     }
 
     .about-page .about-us {
-        padding: 180px 0 160px 0;
+        padding: 200px 0 160px 0;
     }
 
     .jayachandran-section .copy {
@@ -3217,6 +3316,9 @@ footer .footer-logo h3 span {
         /* display: none; */
     }
 
+    .project-item .img .caption {
+       padding: 20px; 
+    }
 
     .blog {
         margin:0 0 70px 0;
