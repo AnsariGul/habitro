@@ -148,7 +148,7 @@ let imgItems = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15
         $(this).toggleClass('open');
         $(".overlay-menu").toggleClass('open-menu');
         setTimeout(function () {
-            $(".menu-img").addClass("in-veiw");
+            $(".menu-img").toggleClass("in-veiw");
         }, 100);
     });
 
