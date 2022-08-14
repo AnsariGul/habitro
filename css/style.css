@@ -1765,6 +1765,7 @@ footer .footer-logo h3 span {
     opacity: 0;
     transition: 0.5s;
     display: block;
+    background-size: 30px;
 }
 
 .select-aprtment .aprtment-item .main-img img {
@@ -2374,6 +2375,7 @@ footer .footer-logo h3 span {
     .select-aprtment .aprtment-item .main-img span a {
         width: 75px;
         height: 75px;
+        background-size: 40px;
     }
 
     .select-aprtment .aprtment-item:hover .main-img,
@@ -3102,9 +3104,11 @@ footer .footer-logo h3 span {
         width: 200px;
         left: 0;
         margin: auto;
+        /* top: -150px; */
+    }
+    .overlay-menu .menu-img.in-veiw {
         top: -150px;
     }
-
     .overlay-menu ul {
         top: 55%;
     }
@@ -3321,7 +3325,7 @@ footer .footer-logo h3 span {
     }
 
     .project-item .img .caption {
-       padding: 20px; 
+       padding: 40px; 
     }
 
     .blog {
