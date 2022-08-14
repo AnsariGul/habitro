@@ -291,8 +291,6 @@ figure {
     transform-origin: center;
     
 }
-
-
 @keyframes slide-in {
     from {
         /* transform: scale(0.4) translateY(80%); */
@@ -302,17 +300,37 @@ figure {
     }
 }
 
-.flip-text-animation.second-text .char {
+.flip-text-animation.second-text {
     animation: slide-in-b .7s cubic-bezier(.3, 0, .7, 1) both;
     animation-delay: calc(50ms * var(--char-index));
 }
 
 @keyframes slide-in-b {
     from {
-        transform: scale(0.4) translateY(80%);
         opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
     }
 }
+.flip-text-animation.third-text .char {
+    animation: slide-in-c .7s cubic-bezier(.3, 0, .7, 1) both;
+    animation-delay: calc(50ms * var(--char-index));
+}
+
+@keyframes slide-in-c {
+    from {
+        opacity: 0;
+        transform: translateY(85%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 /* .title .flip-text {
     transform-style: preserve-3d;
@@ -674,7 +692,7 @@ header.sticky .navbar-light .navbar-nav .nav-link,
 
 /* KNOW MORE ABOUT US */
 .about-section {
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .about-section .about-copy {
@@ -731,7 +749,7 @@ header.sticky .navbar-light .navbar-nav .nav-link,
 
 
 .project {
-    padding: 80px 0 120px 0;
+    padding: 100px 0 130px 0;
     position: relative;
 }
 
@@ -1953,7 +1971,48 @@ footer .footer-logo h3 span {
 
 /*********** Media Query ************/
 
-@media only screen and (min-device-width: 1920px) and (max-device-width: 2560px) {
+@media only screen and (min-device-width: 1921px) and (max-device-width: 2560px) {
+    body,
+    p,
+    ul li,
+    a {
+        font-size: 20px;
+    }
+    .brand_logo_padding{
+        padding: 280px 0;
+    }
+    .start_pos{
+        transform: translate(600%, 550%) scale(5);
+    }
+    .overlay-menu .menu-img{
+        width: 500px;
+    }
+    .overlay-menu ul li a{
+        font-size: 100px;
+        line-height: 110px;
+    }
+    .about-section .about-copy p,
+    .about-section .about-copy p a{
+        font-size: 20px;
+    }
+    .about-section .about-copy h3{
+        font-size: 54px;
+    }
+    .an-active-lifestyle h3{
+        font-size: 100px;
+    }
+    .project-item .bg-green h4{
+        font-size: 64px;
+    }
+    .slider-counter{
+        top: 68%;
+    }
+    .project-slider .owl-prev,
+    .project-slider .owl-next{
+        top: 73%;
+    }
+}
+@media only screen and (min-device-width: 1600px) and (max-device-width: 1920px) {
 
     body,
     p,
@@ -1988,7 +2047,6 @@ footer .footer-logo h3 span {
     }
 
     .second-title h3 a span.next-btn:before {
-
         background-size: auto;
     }
 
