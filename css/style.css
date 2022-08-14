@@ -618,11 +618,15 @@ header.sticky .navbar-light .navbar-nav .nav-link,
 
 .overlay-menu .menu-img {
     position: absolute;
-    top: 0;
+    top: -100%;
     right: 17%;
     width: 250px;
     height: auto;
     z-index: 9999;
+    transition: 1s ease;
+}
+.overlay-menu .menu-img.in-veiw {
+    top: 0;
 }
 
 .overlay-menu ul {
